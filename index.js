@@ -20,11 +20,11 @@
 btn.addEventListener("click", function() {
     let Result = numEl.value
 
-    box1El.textContent = `${Result} meters = ${Result * meterToFeet} feet | ${Result} feet = ${Result / meterToFeet} meters `
+    box1El.textContent = `${Result} meters = ${ (Result * meterToFeet).toFixed(3) } feet | ${Result} feet = ${(Result / meterToFeet).toFixed(3)} meters `
 
-    box2El.textContent = `${Result} liters = ${Result * literToGallon} gallons | ${Result} gallons = ${Result / literToGallon} liters `
+    box2El.textContent = `${Result} liters = ${(Result * literToGallon).toFixed(3)} gallons | ${Result} gallons = ${(Result / literToGallon).toFixed(3)} liters `
 
-    box3El.textContent = `${Result} kilos = ${Result * kiloToPound} pounds | ${Result} pounds = ${Result / kiloToPound} kilos `
+    box3El.textContent = `${Result} kilos = ${(Result * kiloToPound).toFixed(3)} pounds | ${Result} pounds = ${(Result / kiloToPound).toFixed(3)} kilos `
 
 
 })
